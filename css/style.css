@@ -1,0 +1,110 @@
+html {
+    min-width: 400px;
+}
+
+h2, h5{
+    font-weight: 700!important;
+    /*color: rgba(149, 151, 152, 1);*/
+    color: #2d2b3c;
+    margin-top: .5em!important;
+}
+
+.background-image {
+    /*background: linear-gradient(rgba(255,255,255, 0.1), rgba(255,255,255,0.1)), url(../images/background-image.jpeg);*/
+    /*background: rgba(149, 151, 152, 0.5);*/
+}
+
+.avatar {
+    background: url(../images/avatar.jpg);
+    background-position-x: center;
+    background-size: 200px 200px;
+    width: 200px;
+    min-width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 5px solid white;
+    position: relative;
+}
+
+.avatar-description {
+    font-weight: 600;
+    font-size: 1.8em;
+    /*text-shadow: -1px 0 #ffffff, 0 1px white, 1px 0 white, 0 -1px white;*/
+    color: #2d2b3c;
+    margin-top: .5em;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 0.5em;
+}
+
+.short-description {
+    background: rgba(149, 151, 152, 0.5);
+    padding: 0.5em;
+}
+
+.contacts {
+      list-style: none;
+  }
+.contacts a {
+    color: black
+}
+
+@media (max-width: 700px){
+    .avatar {
+        margin: 1em auto;
+    }
+}
+
+@font-face {
+    font-family: 'icons';
+    src: url('icons.eot');
+    src: url('icons.eot#iefix') format('embedded-opentype'),
+    url('../fonts/icons.woff2') format('woff2'),
+    url('icons.woff') format('woff'),
+    url('icons.ttf') format('truetype'),
+    url('icons.svg#icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "icons";
+    font-style: normal;
+    font-weight: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: 6px;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    text-decoration: none;
+    line-height: 1em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: black;
+}
+
+.inverted [class^="icon-"]:before, .inverted [class*=" icon-"]:before {
+    color: white;
+}
+
+.icon-linkedin:before { content: '\e800'; }
+
+.icon-github:before { content: '\e801'; }
+
+.icon-mail:before { content: '\e802'; }
+
+.icon-phone:before { content: '\e803'; }
+
+.icon-skype:before { content: '\e804'; }
+
+.vertical-col-sm {
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.margin-1 {
+    margin: 1em;
+}
